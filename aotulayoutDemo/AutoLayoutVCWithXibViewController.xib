@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLayoutVCWithXibViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2e-9K-Seh" userLabel="View_1">
+                    <rect key="frame" x="30" y="30" width="255" height="255"/>
+                    <color key="backgroundColor" red="1" green="0.26912241260000003" blue="0.31289253080000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-so-6OT" userLabel="View_2">
+                    <rect key="frame" x="315" y="30" width="255" height="255"/>
+                    <color key="backgroundColor" red="0.40956339409999998" green="1" blue="0.23045066910000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e43-xf-tBD" userLabel="View_3">
+                    <rect key="frame" x="30" y="315" width="540" height="255"/>
+                    <color key="backgroundColor" red="0.0" green="0.43137254899999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="e43-xf-tBD" secondAttribute="trailing" constant="30" id="D7C-Cd-uTK"/>
+                <constraint firstItem="e43-xf-tBD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Fwr-DX-HGU"/>
+                <constraint firstItem="W2e-9K-Seh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Gwl-ju-gKR"/>
+                <constraint firstItem="e43-xf-tBD" firstAttribute="top" secondItem="ma0-so-6OT" secondAttribute="bottom" constant="30" id="IOv-OZ-Xyo"/>
+                <constraint firstItem="ma0-so-6OT" firstAttribute="width" secondItem="W2e-9K-Seh" secondAttribute="width" id="LpP-VY-4tw"/>
+                <constraint firstItem="W2e-9K-Seh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="OIx-QZ-3VV"/>
+                <constraint firstItem="ma0-so-6OT" firstAttribute="centerY" secondItem="W2e-9K-Seh" secondAttribute="centerY" id="U4J-CD-X1U"/>
+                <constraint firstItem="ma0-so-6OT" firstAttribute="height" secondItem="W2e-9K-Seh" secondAttribute="height" id="Xjc-e1-F81"/>
+                <constraint firstItem="e43-xf-tBD" firstAttribute="height" secondItem="W2e-9K-Seh" secondAttribute="height" id="deS-eH-MoZ"/>
+                <constraint firstAttribute="trailing" secondItem="ma0-so-6OT" secondAttribute="trailing" constant="30" id="f9X-4w-Oty"/>
+                <constraint firstItem="ma0-so-6OT" firstAttribute="leading" secondItem="W2e-9K-Seh" secondAttribute="trailing" constant="30" id="gLe-F5-8ni"/>
+                <constraint firstAttribute="bottom" secondItem="e43-xf-tBD" secondAttribute="bottom" constant="30" id="zNt-sq-BBb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
